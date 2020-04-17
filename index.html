@@ -3,15 +3,23 @@
         <title> URL SHORTNER </title>
     </head>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <script>
+        function callShort(){
+            let url=document.getElementById(`long-url`).value;
+            shortIt(url);
+        }
+    </script>
     <body>
         <div class="heading">
         URL SHORTNER<br>
     </div>
     <div class="text">
-        <input type="text" name="long-url-text" placeholder="Enter url here" id="long-url"><br>
+        <input class="input-box" type="text" name="long-url-text" placeholder="Enter url here" id="long-url"><br>
     </div>
     <div class="button">
-        <input type="button" value="SHORT IT">
+        <input class="clickable-button" type="button" value="SHORT IT" onclick="callShort()">
     </div>
     </body>
 </html>
